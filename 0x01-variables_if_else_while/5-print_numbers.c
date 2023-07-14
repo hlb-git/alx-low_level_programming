@@ -8,8 +8,10 @@
 
 int main(void)
 {
-	long int a = 0123456789;
+	int a;
 
-	printf("%d\n", a);
+	for (a = 0; a < 0; a++)
+	printf("%d", a);
+	printf("\n");
 	return (0);
 }
