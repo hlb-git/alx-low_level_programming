@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	int a;
+	char a;
 
-	for (a = 0; a < 10; a++)
-	printf("%d\n", a);
+	a = "0123456789"
+	printf("%s\n", a);
 	return (0);
 }
