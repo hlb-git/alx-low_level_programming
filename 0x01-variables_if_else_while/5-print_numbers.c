@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	char a;
+	int a;
 
 	a = "0123456789";
 
-	printf("%c\n", a);
+	printf("%d\n", a);
 	return (0);
 }
