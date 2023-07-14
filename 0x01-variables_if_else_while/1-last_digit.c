@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	remainder = n % 10;
+	int remainder = n % 10;
 	if (remainder > 5)
 	{
 	printf("Last digit of n is %d and is grater than 5\n", remainder);
