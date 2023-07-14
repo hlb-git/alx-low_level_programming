@@ -11,6 +11,7 @@ int main(void)
 	char a;
 
 	a = "0123456789";
+
 	printf("%s\n", a);
 	return (0);
 }
