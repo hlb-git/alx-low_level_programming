@@ -8,9 +8,7 @@
 
 int main(void)
 {
-	int a;
-
-	a = "0123456789";
+	int a = "0123456789";
 
 	printf("%d\n", a);
 	return (0);
