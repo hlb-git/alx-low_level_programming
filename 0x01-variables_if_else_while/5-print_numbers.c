@@ -12,6 +12,6 @@ int main(void)
 
 	a[] = "0123456789";
 
-	printf("%s\n", a);
+	printf("%c\n", a);
 	return (0);
 }
