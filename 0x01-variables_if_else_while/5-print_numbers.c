@@ -10,7 +10,7 @@ int main(void)
 {
 	char a;
 
-	a[] = "0123456789";
+	a[ : ] = "0123456789";
 
 	printf("%c\n", a);
 	return (0);
