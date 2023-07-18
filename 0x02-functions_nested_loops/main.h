@@ -1,1 +1,1 @@
-/*this initializes the program*/
+int _putchar(char c);
