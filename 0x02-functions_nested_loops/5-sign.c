@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*_isalpha - entry point
+*print_sign - entry point
 *@n: an argument
 *Return: the program output
 */
