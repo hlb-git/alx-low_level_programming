@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*print_alphated_x10 - entry point
+*print_alphabet_x10 - entry point
 *
 *Return: the program output
 */
@@ -19,6 +19,7 @@ void print_alphabet_x10(void)
 		{
 			_putchar(a);
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
+
 }
