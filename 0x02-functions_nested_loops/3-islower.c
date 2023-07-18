@@ -2,7 +2,7 @@
 
 /**
 *_islower - entry point
-*
+*@c: an argument
 *Return: the program output
 */
 
