@@ -10,9 +10,9 @@
 void jack_bauer(void)
 {
 
-	int i, k;
+	char i, k;
 
-	for (i = 0; i <= 23; i++)
+	for (i = 0 ; i <= 23; i++)
 	{
 		for (k = i; k <= 60; k++)
 		{
