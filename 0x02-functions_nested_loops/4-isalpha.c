@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*_islower - entry point
+*_isalpha - entry point
 *@c: an argument
 *Return: the program output
 */
