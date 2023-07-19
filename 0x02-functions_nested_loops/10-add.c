@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*_isalpha - entry point
+*add - entry point
 *@l: an argument
 *@a: an argument
 *Return: the program output
