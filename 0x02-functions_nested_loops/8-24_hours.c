@@ -14,7 +14,7 @@ void jack_bauer(void)
 
 	for (i = 0 ; i <= 23; i++)
 	{
-		for (k = i; k <= 60; k++)
+		for (k = i; k <= 59; k++)
 		{
 			_putchar(k);
 			_putchar('\n');
