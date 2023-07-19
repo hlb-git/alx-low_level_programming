@@ -10,6 +10,6 @@
 
 int add(int l, int a)
 {
-	add = l + a;
+	add = (l + a);
 	return (add);
 }
