@@ -5,7 +5,7 @@
 */
 
 
-void main(void)
+int main(void)
 {
 	int l;
 
@@ -24,4 +24,5 @@ void main(void)
 			printf("%d ", l);
 		}
 	}
+	return (0);
 }
