@@ -1,7 +1,5 @@
 /**
 * print_numbers - prints 0 to 9
-* @a: month in number format
-* @b: month in number format
 * Return: void
 */
 
