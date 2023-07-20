@@ -8,9 +8,9 @@ void more_numbers(void)
 	int y;
 	int t;
 
-	for (y = '1'; y <= '10'; y++)
+	for (y = 1; y <= 10; y++)
 	{
-		for (t = '0'; t <= '14'; t++)
+		for (t = 0; t <= 14; t++)
 		{
 			_putchar(t);
 		}
