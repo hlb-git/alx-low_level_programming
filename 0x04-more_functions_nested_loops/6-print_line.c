@@ -7,10 +7,11 @@
 
 void print_line(int n)
 {
+	int s;
 
-	for (n = 1; n <= n; n++)
+	for (s = 1; s <= n; s++)
 	{
-		if (n <= 0)
+		if (s <= 0)
 		{
 			continue;
 		}
