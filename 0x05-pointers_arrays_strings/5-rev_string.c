@@ -1,9 +1,8 @@
 #include "main.h"
 #include "2-strlen.c"
-#include "_putchar.c"
 
 /**
- * print_rev - converts n to 98
+ * rev_string - converts n to 98
  * @s: the pointer argument
  */
 
@@ -18,8 +17,6 @@ void rev_string(char *s)
 		{
 			break;
 		}
-		_putchar(s[n]);
 
 	}
-	_putchar('\n');
 }
