@@ -3,6 +3,7 @@
 /**
  * _strlen - converts n to 98
  * @s: the pointer argument
+ * Return: returns the value of the string length
  */
 
 int _strlen(char *s)
