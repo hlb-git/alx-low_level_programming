@@ -21,11 +21,6 @@ char *rot13(char *a)
 				a[c] = o[d];
 				break;
 			}
-			else if (a[c] == o[d])
-			{
-				a[c] = p[d];
-				break;
-			}
 		}
 	}
 
