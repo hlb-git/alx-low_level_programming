@@ -11,7 +11,7 @@ void reverse_array(int *a, int n)
 	char p;
 	int c;
 
-	if (n == 0)
+	if (n <= 0)
 	{}
 	else
 	{
