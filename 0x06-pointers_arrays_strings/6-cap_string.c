@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* cap_string - contatinates two strings together
+* cap_string - capitalizes srings
 * @u: array to capitalize
-* Return: string to return
+* Return: returns capitalized string
 */
 
 char *cap_string(char *u)
@@ -21,7 +21,7 @@ char *cap_string(char *u)
 		{
 			u[c + 1] = u[c + 1] - 32;
 		}
-		else if ((u[c] == '.' || u[c] == ',' || u[c] == '(') &&
+		else if ((u[c] == '.' || u[c] == '"' || u[c] == '(') &&
 		u[c + 1] >= 'a' && u[c + 1] <= 'z')
 		{
 			u[c + 1] = u[c + 1] - 32;
