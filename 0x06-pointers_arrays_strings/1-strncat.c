@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
-* _strcat - contatinates two strings together
-*
+* _strncat - contatinates two strings together
+* @dest: first string arguement
+* @src: second string argument
+* @n: the number of strings to be copied
 * Return: this returns the new string
 */
 
