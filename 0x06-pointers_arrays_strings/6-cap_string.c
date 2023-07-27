@@ -20,6 +20,10 @@ char *cap_string(char *u)
 		{
 			u[c + 1] = u[c + 1] - 32;
 		}
+		else if ((u[c] == '.'|| u[c] == ',') && u[c + 1] >= 'a' && u[c + 1] <= 'z')
+		{
+			u[c + 1] = u[c + 1] - 32;
+		}
 
 	}
 	return (u);
