@@ -2,7 +2,8 @@
 
 /**
 * _strcat - contatinates two strings together
-*
+* @dest: first aguement
+* @src: second argument
 * Return: this returns the new string
 */
 
