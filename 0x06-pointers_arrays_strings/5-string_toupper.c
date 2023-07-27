@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-* string_touper - contatinates two strings together
+* string_toupper - contatinates two strings together
 * @u: array to capitalize
+* Return: string to return
 */
 
 
