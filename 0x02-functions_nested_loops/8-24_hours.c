@@ -3,23 +3,29 @@
 /**
 *jack_bauer - entry point
 *
-*Return: the program output
 */
-
 
 void jack_bauer(void)
 {
+	int i, k;
+	int u1, d1;
+	int u2, d2;
 
-	char i, k;
-
-	for (i = 0 ; i <= 23; i++)
+	for (i = 0 ; i < 24; i++)
 	{
-		for (k = i; k <= 59; k++)
+		u1 = i / 10;
+		d1 = i % 10;
+		for (k = 0; k < 60; k++)
 		{
-			_putchar(k);
+			u2 = k / 10;
+			d2 = k % 10;
+
+			_putchar('0' + u1);
+			_putchar('0' + d1);
+			_putchar(':');
+			_putchar('0' + u2);
+			_putchar('0' + d2);
 			_putchar('\n');
 		}
-		_putchar(i);
 	}
-
 }
