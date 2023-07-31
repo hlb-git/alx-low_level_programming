@@ -11,10 +11,8 @@
 void print_diagsums(int *a, int size)
 {
 	int i;
-	int diagO = 0;
-	int diagT = 0;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; a[i] < size; i++)
 	{
 	}
 }
