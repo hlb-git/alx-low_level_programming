@@ -2,7 +2,7 @@
 /**
  * _memcpy - sets memory to array
  * @dest: array to set
- * @b: value to set it as
+ * @src: value to set it as
  * @n: n amount of times
  * Return: char value
  */
