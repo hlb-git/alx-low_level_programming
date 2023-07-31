@@ -9,5 +9,10 @@
 
 char *_strstr(char *haystack, char *needle)
 {
+	if (haystack[0] == '\0')
+	{
+		haystack[0] = '\0';
+	}
+
 	return (needle);
 }
