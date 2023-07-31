@@ -23,10 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-	}
-	if (s[j] == '\0')
-	{
-	return (pos);
+		if (s[i] == '\0')
+		{
+		return (pos);
+		}
 	}
 	return (pos);
 }
