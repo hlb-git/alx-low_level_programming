@@ -15,5 +15,5 @@ int main(int argc, char  *argv[])
 {
 		UNUSED(argc);
 		UNUSED(argv);
-		return (1);
+		return (0);
 }
