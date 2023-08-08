@@ -10,11 +10,9 @@
  * @s: array you are assigning
  * Return: char value
  */
-char **helper(int word, int len, char *str, char **s)
+char *argstostr(int ac, char **av)
 {
-	UNUSED(word);
-	UNUSED(len);
-	UNUSED(str);
-	UNUSED(s);
+	UNUSED(ac);
+	UNUSED(av);
 	return (0);
 }
