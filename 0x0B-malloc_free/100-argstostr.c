@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define UNUSED(x) (void)(x)
+
 /**
- * helper - helps function
- * @word: wordcount
- * @len: length
- * @str: string to go through
- * @s: array you are assigning
+ * argstostr - gives array of args
+ * @ac: argument count
+ * @av: array of arguments
  * Return: char value
  */
+
 char *argstostr(int ac, char **av)
 {
 	UNUSED(ac);
