@@ -4,6 +4,8 @@
 
 /**
 *main - main function
+*@argc: integer
+*@argv: array
 *Return: return value for the program
 */
 
