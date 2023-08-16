@@ -4,6 +4,7 @@
 
 /**
 * array_iterator - function name
+* @array: pointer to an array
 * @size: size of the array
 * @action: passed function argurment
 */
