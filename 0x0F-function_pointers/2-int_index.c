@@ -3,10 +3,11 @@
 #include <stddef.h>
 
 /**
-*int_index - function name
+* int_index - function name
 *@array: pointer to an array arguement
 *@size: size of the passed array
 *@cmp: the comparison function
+*Return: returns -1 if it fails
 */
 
 
