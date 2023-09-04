@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	ssize_t fil_des1, fil_des2, tot_read, written, closed1, closed2;
+	ssize_t fil_des, tot_read, written, closed;
 	void *buffer;
 
 	buffer = malloc(1024);
@@ -21,35 +21,30 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	fil_des1 = open(argv[1], O_RDWR);
-	if (fil_des1 == -1)
+	fil_des = open(argv[1], O_RDWR);
+	if (fil_des == -1)
 	{dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 
-	tot_read = read(fil_des1, buffer, 1024);
+	tot_read = read(fil_des, buffer, 1024);
 	if (tot_read == -1)
 	{dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 	exit(98);
 	}
-	fil_des2 = open(argv[2], O_RDWR | O_TRUNC, 0661);
-	if (fil_des2 == -1)
+	fil_des = open(argv[2], O_RDWR | O_TRUNC, 0661);
+	if (fil_des == -1)
 	{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 	exit(99);
 	}
-	written = write(fil_des2, buffer, 1024);
+	written = write(fil_des, buffer, 1024);
 	if (written == -1)
 	{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	closed1 = close(fil_des1);
-	closed2 = close(fil_des2);
-	if (closed1 == -1)
-	{dprintf(STDERR_FILENO, "Error: Can't close fd %ld\n", fil_des1);
-		exit(100);
-	}
-	if (closed2 == -1)
-	{dprintf(STDERR_FILENO, "Error: Can't close fd %ld\n", fil_des2);
+	closed = close(fil_des);
+	if (closed == -1)
+	{dprintf(STDERR_FILENO, "Error: Can't close fd %ld\n", fil_des);
 		exit(100);
 	}
 	free(buffer);
