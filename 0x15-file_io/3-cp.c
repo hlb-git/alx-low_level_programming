@@ -47,5 +47,6 @@ int main(int argc, char *argv[])
 	{dprintf(STDERR_FILENO, "Error: Can't close fd %ld\n", fil_des);
 		exit(100);
 	}
+	free(buffer);
 	return (1);
 }
