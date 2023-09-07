@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	fil_des = open(argv[1], O_RDWR);
+	fil_des = open(argv[1], O_RDWR, 0664);
 	if (fil_des == -1)
 	{dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
