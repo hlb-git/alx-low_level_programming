@@ -13,7 +13,8 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	if (index) /*shifts the mask by the value of index if not 0*/
 		mask = mask << index;
-
+	if (index > 64)
+		return (-1);
 	if (n & mask) /* this logic checks if the result is 1 or 0*/
 		return (1);
 	else if (!(n & mask))
