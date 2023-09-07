@@ -33,12 +33,8 @@ int main(int argc, char *argv[])
 	exit(98);
 	}
 	fil_des = open(argv[2], O_RDWR | O_TRUNC, 0664);
-	if (fil_des == -1)
-	{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-	exit(0);
-	}
 	written = write(fil_des, buffer, 1024);
-	if (written == -1)
+	if (written == -1 || fil_des == -1)
 	{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
