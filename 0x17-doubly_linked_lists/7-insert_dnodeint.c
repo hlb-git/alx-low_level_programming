@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * insert_dnodeint_at_index - insert node at index?
  * @h: address of linked list
@@ -6,6 +7,7 @@
  * @n: value of n
  * Return: return new node or NULL
  */
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *tmp, *new;
