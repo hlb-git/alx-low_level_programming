@@ -5,7 +5,7 @@
  * @ht: hash table to add value to
  * @key: key of the array
  * @value: value to add to the table
- * Return: returns 1 or 0
+ * Return: returns 1 on success or 0 otherwise
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -32,6 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new->value = strdup(value);
 	if (!new->value)
 	{
+		free(new->value);
 		free(new);
 		return (0);
 	}
