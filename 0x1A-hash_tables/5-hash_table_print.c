@@ -24,11 +24,12 @@ void hash_table_print(const hash_table_t *ht)
 		printf("{");
 		while (size)
 		{
-			if (ht->array[i])
+			while (ht->array[i])
 			{
 				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
 				if (i != last_idx)
 					printf(", ");
+				ht->array[i] = ht->array[i]->next;
 			}
 			i++;
 			size--;
