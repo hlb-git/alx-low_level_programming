@@ -84,6 +84,51 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	return (set_sorted_list(ht, new));
 }
 
+
+/**
+ * set_sorted_list - sets doubly linked list
+ * @ht: hash table to go through
+ * @new: node to sort
+ * Return: pass or fail
+ */
+int set_sorted_list(shash_table_t *ht, shash_node_t *new)
+{
+	shash_node_t *sorter;
+
+	if (!ht->shead)
+	{
+		ht->shead = new;
+		ht->stail = new;
+		return (1);
+	}
+	if (strcmp(new->key, ht->shead->key) < 0)
+	{
+		ht->shead->sprev = new;
+		new->snext = ht->shead;
+		ht->shead = new;
+		return (1);
+	}
+	else
+	{
+		sorter = ht->shead->snext;
+		while (sorter && strcmp(new->key, sorter->key) > 0)
+			sorter = sorter->snext;
+		if (!sorter)
+		{
+			new->sprev = ht->stail;
+			ht->stail->snext = new;
+			ht->stail = new;
+			return (1);
+		}
+		new->sprev = sorter->sprev;
+		sorter->sprev->snext = new;
+		sorter->sprev = new;
+		new->snext = sorter;
+	}
+	return (1);
+}
+
+
 /**
  * shash_table_get - returns value of key
  * @ht: hash table
