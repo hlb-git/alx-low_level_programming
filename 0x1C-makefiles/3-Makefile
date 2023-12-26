@@ -8,17 +8,17 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	ifneq("$(wildcard *~)","")
+ifneq("$(wildcard *~)","")
 		$(RM) *~
-	endif
-	ifneq ("$(wildcard $(NAME))","")
+endif
+ifneq ("$(wildcard $(NAME))","")
 		$(RM) $(NAME)
-	endif
+endif
 
 oclean:
-	ifneq ("$(wildcard $(OBJ))","")
+ifneq ("$(wildcard $(OBJ))","")
 		$(RM) $(OBJ)
-	endif
+endif
 
 fclean: clean oclean
 
