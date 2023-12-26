@@ -1,3 +1,4 @@
+#makefile commands
 CC=gcc
 SRC=school.c main.c
 NAME=school
@@ -8,7 +9,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-ifneq("$(wildcard *~)","")
+ifneq ("$(wildcard *~)","")
 	$(RM) *~
 endif
 ifneq ("$(wildcard $(NAME))","")
