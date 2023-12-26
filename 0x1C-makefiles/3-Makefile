@@ -1,4 +1,3 @@
-# Makefile to compile C program, with Warnings, and clean up
 CC=gcc
 SRC=school.c main.c
 NAME=school
@@ -9,7 +8,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-ifneq ("$(wildcard *~)","")
+ifneq("$(wildcard *~)","")
 	$(RM) *~
 endif
 ifneq ("$(wildcard $(NAME))","")
