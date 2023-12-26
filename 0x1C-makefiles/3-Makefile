@@ -8,7 +8,7 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	ifneq("$(Wildcard *~)","")
+	ifneq("$(wildcard *~)","")
 		$(RM) *~
 	endif
 	ifneq ("$(wildcard $(NAME))","")
